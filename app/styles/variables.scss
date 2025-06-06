@@ -1,0 +1,250 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --solditor-elements-borderColor: theme('colors.alpha.gray.10');
+  --solditor-elements-borderColorActive: theme('colors.accent.600');
+
+  --solditor-elements-bg-depth-1: theme('colors.white');
+  --solditor-elements-bg-depth-2: theme('colors.gray.50');
+  --solditor-elements-bg-depth-3: theme('colors.gray.200');
+  --solditor-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --solditor-elements-textPrimary: theme('colors.gray.950');
+  --solditor-elements-textSecondary: theme('colors.gray.600');
+  --solditor-elements-textTertiary: theme('colors.gray.500');
+
+  --solditor-elements-code-background: theme('colors.gray.100');
+  --solditor-elements-code-text: theme('colors.gray.950');
+
+  --solditor-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --solditor-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --solditor-elements-button-primary-text: theme('colors.accent.500');
+
+  --solditor-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --solditor-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --solditor-elements-button-secondary-text: theme('colors.gray.950');
+
+  --solditor-elements-button-danger-background: theme('colors.alpha.red.10');
+  --solditor-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --solditor-elements-button-danger-text: theme('colors.red.500');
+
+  --solditor-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --solditor-elements-item-contentActive: theme('colors.gray.950');
+  --solditor-elements-item-contentAccent: theme('colors.accent.700');
+  --solditor-elements-item-contentDanger: theme('colors.red.500');
+  --solditor-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --solditor-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --solditor-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --solditor-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --solditor-elements-loader-background: theme('colors.alpha.gray.10');
+  --solditor-elements-loader-progress: theme('colors.accent.500');
+
+  --solditor-elements-artifacts-background: theme('colors.white');
+  --solditor-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --solditor-elements-artifacts-borderColor: var(--solditor-elements-borderColor);
+  --solditor-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --solditor-elements-artifacts-inlineCode-text: var(--solditor-elements-textPrimary);
+
+  --solditor-elements-actions-background: theme('colors.white');
+  --solditor-elements-actions-code-background: theme('colors.gray.800');
+
+  --solditor-elements-messages-background: theme('colors.gray.100');
+  --solditor-elements-messages-linkColor: theme('colors.accent.500');
+  --solditor-elements-messages-code-background: theme('colors.gray.800');
+  --solditor-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --solditor-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --solditor-elements-icon-success: theme('colors.green.500');
+  --solditor-elements-icon-error: theme('colors.red.500');
+  --solditor-elements-icon-primary: theme('colors.gray.950');
+  --solditor-elements-icon-secondary: theme('colors.gray.600');
+  --solditor-elements-icon-tertiary: theme('colors.gray.500');
+
+  --solditor-elements-dividerColor: theme('colors.gray.100');
+
+  --solditor-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --solditor-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --solditor-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --solditor-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --solditor-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --solditor-elements-preview-addressBar-background: theme('colors.gray.100');
+  --solditor-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --solditor-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --solditor-elements-preview-addressBar-text: var(--solditor-elements-textSecondary);
+  --solditor-elements-preview-addressBar-textActive: var(--solditor-elements-textPrimary);
+
+  --solditor-elements-terminals-background: theme('colors.white');
+  --solditor-elements-terminals-buttonBackground: var(--solditor-elements-bg-depth-4);
+
+  --solditor-elements-cta-background: theme('colors.gray.100');
+  --solditor-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --solditor-terminal-background: var(--solditor-elements-terminals-background);
+  --solditor-terminal-foreground: #333333;
+  --solditor-terminal-selection-background: #00000040;
+  --solditor-terminal-black: #000000;
+  --solditor-terminal-red: #cd3131;
+  --solditor-terminal-green: #00bc00;
+  --solditor-terminal-yellow: #949800;
+  --solditor-terminal-blue: #0451a5;
+  --solditor-terminal-magenta: #bc05bc;
+  --solditor-terminal-cyan: #0598bc;
+  --solditor-terminal-white: #555555;
+  --solditor-terminal-brightBlack: #686868;
+  --solditor-terminal-brightRed: #cd3131;
+  --solditor-terminal-brightGreen: #00bc00;
+  --solditor-terminal-brightYellow: #949800;
+  --solditor-terminal-brightBlue: #0451a5;
+  --solditor-terminal-brightMagenta: #bc05bc;
+  --solditor-terminal-brightCyan: #0598bc;
+  --solditor-terminal-brightWhite: #a5a5a5;
+}
+
+/* Color Tokens Dark Theme */
+:root[data-theme='dark'] {
+  --solditor-elements-borderColor: theme('colors.alpha.white.10');
+  --solditor-elements-borderColorActive: theme('colors.accent.500');
+
+  --solditor-elements-bg-depth-1: theme('colors.gray.950');
+  --solditor-elements-bg-depth-2: theme('colors.gray.900');
+  --solditor-elements-bg-depth-3: theme('colors.gray.800');
+  --solditor-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --solditor-elements-textPrimary: theme('colors.white');
+  --solditor-elements-textSecondary: theme('colors.gray.400');
+  --solditor-elements-textTertiary: theme('colors.gray.500');
+
+  --solditor-elements-code-background: theme('colors.gray.800');
+  --solditor-elements-code-text: theme('colors.white');
+
+  --solditor-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --solditor-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --solditor-elements-button-primary-text: theme('colors.accent.500');
+
+  --solditor-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --solditor-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --solditor-elements-button-secondary-text: theme('colors.white');
+
+  --solditor-elements-button-danger-background: theme('colors.alpha.red.10');
+  --solditor-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --solditor-elements-button-danger-text: theme('colors.red.500');
+
+  --solditor-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --solditor-elements-item-contentActive: theme('colors.white');
+  --solditor-elements-item-contentAccent: theme('colors.accent.500');
+  --solditor-elements-item-contentDanger: theme('colors.red.500');
+  --solditor-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --solditor-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --solditor-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --solditor-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --solditor-elements-loader-background: theme('colors.alpha.gray.10');
+  --solditor-elements-loader-progress: theme('colors.accent.500');
+
+  --solditor-elements-artifacts-background: theme('colors.gray.900');
+  --solditor-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --solditor-elements-artifacts-borderColor: var(--solditor-elements-borderColor);
+  --solditor-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --solditor-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --solditor-elements-actions-background: theme('colors.gray.900');
+  --solditor-elements-actions-code-background: theme('colors.gray.800');
+
+  --solditor-elements-messages-background: theme('colors.gray.800');
+  --solditor-elements-messages-linkColor: theme('colors.accent.500');
+  --solditor-elements-messages-code-background: theme('colors.gray.900');
+  --solditor-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --solditor-elements-messages-inlineCode-text: var(--solditor-elements-textPrimary);
+
+  --solditor-elements-icon-success: theme('colors.green.400');
+  --solditor-elements-icon-error: theme('colors.red.400');
+  --solditor-elements-icon-primary: theme('colors.gray.950');
+  --solditor-elements-icon-secondary: theme('colors.gray.600');
+  --solditor-elements-icon-tertiary: theme('colors.gray.500');
+
+  --solditor-elements-dividerColor: theme('colors.gray.100');
+
+  --solditor-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --solditor-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --solditor-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --solditor-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --solditor-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --solditor-elements-preview-addressBar-background: var(--solditor-elements-bg-depth-1);
+  --solditor-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --solditor-elements-preview-addressBar-backgroundActive: var(--solditor-elements-bg-depth-1);
+  --solditor-elements-preview-addressBar-text: var(--solditor-elements-textSecondary);
+  --solditor-elements-preview-addressBar-textActive: var(--solditor-elements-textPrimary);
+
+  --solditor-elements-terminals-background: var(--solditor-elements-bg-depth-1);
+  --solditor-elements-terminals-buttonBackground: var(--solditor-elements-bg-depth-3);
+
+  --solditor-elements-cta-background: theme('colors.alpha.white.10');
+  --solditor-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --solditor-terminal-background: var(--solditor-elements-terminals-background);
+  --solditor-terminal-foreground: #eff0eb;
+  --solditor-terminal-selection-background: #97979b33;
+  --solditor-terminal-black: #000000;
+  --solditor-terminal-red: #ff5c57;
+  --solditor-terminal-green: #5af78e;
+  --solditor-terminal-yellow: #f3f99d;
+  --solditor-terminal-blue: #57c7ff;
+  --solditor-terminal-magenta: #ff6ac1;
+  --solditor-terminal-cyan: #9aedfe;
+  --solditor-terminal-white: #f1f1f0;
+  --solditor-terminal-brightBlack: #686868;
+  --solditor-terminal-brightRed: #ff5c57;
+  --solditor-terminal-brightGreen: #5af78e;
+  --solditor-terminal-brightYellow: #f3f99d;
+  --solditor-terminal-brightBlue: #57c7ff;
+  --solditor-terminal-brightMagenta: #ff6ac1;
+  --solditor-terminal-brightCyan: #9aedfe;
+  --solditor-terminal-brightWhite: #f1f1f0;
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 37rem;
+  --chat-min-width: 640px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 1536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--solditor-elements-icon-success);
+  --toastify-color-progress-error: var(--solditor-elements-icon-error);
+
+  /* Terminal */
+  --solditor-elements-terminal-backgroundColor: var(--solditor-terminal-background);
+  --solditor-elements-terminal-textColor: var(--solditor-terminal-foreground);
+  --solditor-elements-terminal-cursorColor: var(--solditor-terminal-foreground);
+  --solditor-elements-terminal-selection-backgroundColor: var(--solditor-terminal-selection-background);
+  --solditor-elements-terminal-color-black: var(--solditor-terminal-black);
+  --solditor-elements-terminal-color-red: var(--solditor-terminal-red);
+  --solditor-elements-terminal-color-green: var(--solditor-terminal-green);
+  --solditor-elements-terminal-color-yellow: var(--solditor-terminal-yellow);
+  --solditor-elements-terminal-color-blue: var(--solditor-terminal-blue);
+  --solditor-elements-terminal-color-magenta: var(--solditor-terminal-magenta);
+  --solditor-elements-terminal-color-cyan: var(--solditor-terminal-cyan);
+  --solditor-elements-terminal-color-white: var(--solditor-terminal-white);
+  --solditor-elements-terminal-color-brightBlack: var(--solditor-terminal-brightBlack);
+  --solditor-elements-terminal-color-brightRed: var(--solditor-terminal-brightRed);
+  --solditor-elements-terminal-color-brightGreen: var(--solditor-terminal-brightGreen);
+  --solditor-elements-terminal-color-brightYellow: var(--solditor-terminal-brightYellow);
+  --solditor-elements-terminal-color-brightBlue: var(--solditor-terminal-brightBlue);
+  --solditor-elements-terminal-color-brightMagenta: var(--solditor-terminal-brightMagenta);
+  --solditor-elements-terminal-color-brightCyan: var(--solditor-terminal-brightCyan);
+  --solditor-elements-terminal-color-brightWhite: var(--solditor-terminal-brightWhite);
+}
