@@ -36,34 +36,34 @@
 ### Quick Setup
 
 1. **Clone the repository:**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/yourusername/solditor.git
    cd solditor
-   \`\`\`
+   ```
 
 2. **Install dependencies:**
-   \`\`\`bash
+   ```bash
    pnpm install
-   \`\`\`
+   ```
 
 3. **Set up environment variables:**
-   \`\`\`bash
+   ```bash
    cp .env.example .env.local
-   \`\`\`
+   ```
    
    Add your API keys to `.env.local`:
-   \`\`\`env
+   ```env
    OPENAI_API_KEY=your_openai_api_key_here
    ANTHROPIC_API_KEY=your_claude_api_key_here
    SELECTED_PROVIDER=openai
    WEBCONTAINER_API_KEY=your_webcontainer_api_key_here
    VITE_LOG_LEVEL=debug
-   \`\`\`
+   ```
 
 4. **Start the development server:**
-   \`\`\`bash
+   ```bash
    pnpm run dev
-   \`\`\`
+   ```
 
 5. **Open your browser:**
    Navigate to `http://localhost:5173` and start building!
@@ -101,9 +101,9 @@
 
 Deploy to Cloudflare Pages:
 
-\`\`\`bash
+```bash
 pnpm run deploy
-\`\`\`
+```
 
 Make sure to set your environment variables in the Cloudflare dashboard.
 

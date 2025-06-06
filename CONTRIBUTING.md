@@ -41,28 +41,28 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/solditor.git
-\`\`\`
+```
 
 2. Install dependencies:
 
-\`\`\`bash
+```bash
 pnpm install
-\`\`\`
+```
 
 3. Create a `.env.local` file in the root directory and add your API keys:
 
-\`\`\`
+```
 ANTHROPIC_API_KEY=XXX
 WEBCONTAINER_API_KEY=XXX
-\`\`\`
+```
 
 Optionally, you can set the debug level:
 
-\`\`\`
+```
 VITE_LOG_LEVEL=debug
-\`\`\`
+```
 
 **Important**: Never commit your `.env.local` file to version control. It's already included in .gitignore.
 
@@ -81,9 +81,9 @@ VITE_LOG_LEVEL=debug
 
 To start the development server:
 
-\`\`\`bash
+```bash
 pnpm run dev
-\`\`\`
+```
 
 This will start the Remix Vite development server.
 
@@ -91,17 +91,17 @@ This will start the Remix Vite development server.
 
 Run the test suite with:
 
-\`\`\`bash
+```bash
 pnpm test
-\`\`\`
+```
 
 ## Deployment
 
 To deploy the application to Cloudflare Pages:
 
-\`\`\`bash
+```bash
 pnpm run deploy
-\`\`\`
+```
 
 Make sure you have the necessary permissions and Wrangler is correctly configured for your Cloudflare account.
 
