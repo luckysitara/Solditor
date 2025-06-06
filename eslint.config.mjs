@@ -4,6 +4,10 @@ export default [
   },
   {
     files: ['**/*.tsx', '**/*.ts', '**/*.jsx', '**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+    },
     rules: {
       'no-restricted-imports': [
         'error',
