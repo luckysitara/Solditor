@@ -240,6 +240,10 @@ export default defineConfig({
       warn: true,
       collections: {
         ...customIconCollection,
+        // Add these collections to fix the missing icons
+        ph: () => import("@iconify-json/ph/icons.json").then((i) => i.default),
+        "svg-spinners": () => import("@iconify-json/svg-spinners/icons.json").then((i) => i.default),
+        bolt: () => import("@iconify-json/tabler/icons.json").then((i) => i.default),
       },
     }),
   ],
@@ -253,13 +257,13 @@ export default defineConfig({
  *
  * Example:
  *
- * ```
+ * \`\`\`
  * {
  *   '1': '#FFFFFF03',
  *   '2': '#FFFFFF05',
  *   '3': '#FFFFFF08',
  * }
- * ```
+ * \`\`\`
  */
 function generateAlphaPalette(hex: string) {
   return [1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100].reduce(

@@ -4,9 +4,15 @@ import { defineConfig, type ViteDevServer } from 'vite';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 import { optimizeCssModules } from 'vite-plugin-optimize-css-modules';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import path from 'path';  // <-- import path module
 
 export default defineConfig((config) => {
   return {
+    resolve: {
+      alias: {
+        "~": path.resolve(__dirname, "app"),  // <-- added alias for '~'
+      },
+    },
     build: {
       target: 'esnext',
     },
