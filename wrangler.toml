@@ -8,5 +8,5 @@ pages_build_output_dir = "./build/client"
 # Production environment variables
 # Set these in your Cloudflare dashboard
 
-[env.staging]
+[env.preview]
 # Staging environment variables
